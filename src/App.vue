@@ -12,13 +12,13 @@ import { RouterLink, RouterView } from 'vue-router'
       </nav>
     </div>
   </header>
-  <!-- Affiche le composant à l'URL, à la route courante -->
+  <!-- Affiche le composant correspondant à l'URL, à la route courante -->
   <!-- Les routes sont décrites dans le fichier src/router/index.js -->
-<main>
-  <RouterView />
-</main>
+  <main>
+    <RouterView />
+  </main>
 <footer>
-  &copy;2024 Oktay Bahadir
+  &copy;2024 - Oktay Bahadir
 </footer>
 </template>
 
@@ -27,12 +27,13 @@ nav a {
   display: inline-block;
   margin-right: 10px;
   padding: 5rem;
+  background-color: black;
   color: white;
   text-decoration: none;
 }
 
 nav a.router-link-active,
-nav a.hover {
+nav a:hover {
   background-color: red;
 }
 </style>
